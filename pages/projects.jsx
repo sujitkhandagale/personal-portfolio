@@ -1,8 +1,17 @@
+import Header from '@/components/Header'
 import React from 'react'
 
 function projects() {
   return (
-    <div>projects</div>
+  <>
+  <Header/>
+  <section>
+      <div className="Heading">
+        <h2>Projects</h2>
+      </div>
+
+    </section>
+  </>
   )
 }
 

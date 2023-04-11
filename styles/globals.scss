@@ -1,0 +1,241 @@
+@font-face {
+  font-family: Anonymous_Pro;
+  src: url("./fonts/Anonymous_Pro.ttf");
+}
+
+@font-face {
+  font-family: Anonymous_Pro_italic;
+  font-style: italic;
+  src: url("./fonts/Anonymous_Pro_I.ttf");
+}
+
+@font-face {
+  font-family: Anonymous_Pro_bold;
+  src: url("./fonts/Anonymous_Pro_B.ttf");
+}
+
+@font-face {
+  font-family: Anonymous_Pro;
+  src: url("./fonts/Anonymous_Pro.ttf");
+}
+
+@font-face {
+  font-family: Anonymous_Pro;
+  src: url("./fonts/Anonymous_Pro.ttf");
+}
+
+a {
+  font-family: Anonymous_Pro;
+}
+
+p {
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+span {
+  color: white;
+}
+
+nav {
+  padding: 5px 0 5px 0;
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+  .logo {
+    img {
+      position: relative;
+      top: 10%;
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  .menu_items {
+    .menu_item {
+      display: flex;
+
+      li {
+        list-style: none !important;
+
+        a {
+          font-family: Anonymous_Pro_bold;
+          color: white;
+          // font-weight: bold;
+          text-decoration: none;
+          padding: 10px 10px 10px 10px;
+          text-transform: uppercase;
+          border-radius: 10px;
+        }
+
+        a:hover {
+          background-color: #42378f;
+          background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+          padding: 10px 10px 10px 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-family: Anonymous_Pro;
+  margin: 0 !important;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1192px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1600px !important;
+  }
+}
+
+// home Hero
+.home_hero {
+  padding: 100px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  .Home_Description {
+    position: relative;
+    left: 10%;
+    h1 {
+      font-size: 18px;
+      font-family: Anonymous_Pro;
+      color: white;
+     
+    }
+    span {
+      font-size: 35px;
+      font-family: Anonymous_Pro_bold;
+    }
+  }
+
+  .Home_img {
+    position: relative;
+    right: 10%;
+    img {
+      width: 120px;
+      height: auto;
+    }
+  }
+}
+
+// Technology
+.Technology {
+  h2 {
+    text-align: end;
+    padding-right: 25px;
+    font-size: 20px;
+    font-family: Anonymous_Pro;
+  }
+
+  .Technology_boxes {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    .Technology_box {
+      // background-color: #1d1d1d;
+      border-radius: 10px;
+      padding: 10px;
+      border: 3px solid transparent;
+      height: auto;
+      // width: 200px;
+      .logo {
+        img {
+          width: 40px;
+          height: auto;
+        }
+      }
+    }
+    .Technology_box:hover {
+      border: 3px solid rgb(124, 124, 124);
+      box-shadow: rgba(126, 126, 126, 0.25) 0px 50px 100px -20px,
+        rgba(73, 73, 73, 0.3) 0px 30px 60px -30px;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Heading h2 {
+  font-size: 20px;
+  text-transform: uppercase !important;
+}
+
+.Home_projects {
+  padding: 50px 0 0 0;
+}
+
+// Project Boxes
+
+.Projects_boxes {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  .Project_box {
+    border: 1px solid rgba(124, 124, 124, 0);
+    height: auto;
+    width: 350px;
+    .Project_image {
+      img {
+        height: auto;
+        width: 350px;
+      }
+    }
+  }
+  .Project_box:hover {
+    border: 1px solid rgb(124, 124, 124);
+  }
+}
