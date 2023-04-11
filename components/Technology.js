@@ -4,7 +4,7 @@ import Mongodb from "../assets/language_logos/mongodb.png";
 import JavaScript from "../assets/language_logos/JavaScript.png";
 import NodeLogo from "../assets/language_logos/node.png";
 import sass from "../assets/language_logos/sass.png";
-import Html from "../assets/language_logos/html.png";
+import Html from "../assets/language_logos/Html.png";
 import ReactLogo from "../assets/language_logos/Reactjs.png";
 
 const Languages = [Mongodb, ReactLogo, JavaScript,NodeLogo, sass, Html];
