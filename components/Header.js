@@ -2,16 +2,20 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Logo from "../assets/light_logo.png";
+import MobileMenu from "../assets/hamburger-menu-icon.svg";
 
 
 function Header() {
 
     return (
         <div>
+            <div className="Mobile_icon">
+                <i className="fa-solid fa-bars"></i>
+            </div>
             <nav>
                 <div className="container navbar">
                     <div className="logo">
-                        <Link href={"/"}><Image src={Logo}></Image></Link>
+                        <Link href={"/"}><Image src={Logo} alt='img'></Image></Link>
                     </div>
                     <div className="menu_items">
                         <ul className='menu_item'>

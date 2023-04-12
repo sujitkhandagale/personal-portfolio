@@ -1,17 +1,21 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
-function ProjectBox({ Project_image, Project_Title, Project_description }) {
+function ProjectBox({ Project_image, Project_Title, Project_description, Tools }) {
     return (
-        <div className='Project_box'>
-            <div className="Project_image">
-                <Image src={Project_image} height={"100"} width={"100"} />
+        <Link href={"/"}>
+            <div className='Project_box'>
+                <div className="Project_image">
+                    <Image src={Project_image} height={""} width={""} alt='img'/>
+                </div>
+                <div className="Project_desc">
+                    <h3>{Project_Title}</h3>
+                    <p>{Project_description}</p>
+                    
+                </div>
             </div>
-            <div className="Project_desc">
-                <h3>{Project_Title}</h3>
-                <p>{Project_description}</p>
-            </div>
-        </div>
+        </Link>
     )
 }
 
