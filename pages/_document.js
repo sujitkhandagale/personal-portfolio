@@ -4,7 +4,7 @@ import Script from 'next/script'
 
 
 export default function Document() {
-  const GTM_ID = "GTM-MGKPQ93"
+  const GTM_ID = "GTM-5VDLNDZ";
   return (
     <Html lang="en">
       <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -20,7 +20,7 @@ export default function Document() {
       <Head />
       <body>
      
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGKPQ93"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VDLNDZ"
 height="0" width="0" Style="display:none;visibility:hidden"></iframe></noscript>
 
         <Main />
