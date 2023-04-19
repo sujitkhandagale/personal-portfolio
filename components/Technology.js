@@ -15,7 +15,7 @@ function Technology() {
         <div className="Technology_boxes">
           {Languages.map((logo) => (<div className="Technology_box">
             <div className="logo" key={logo.id}>
-              <Image  src={logo} alt='img'/>
+              <Image src={logo} alt='img'/>
              
             </div>
           </div>
