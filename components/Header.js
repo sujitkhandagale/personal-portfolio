@@ -3,12 +3,12 @@ import Link from 'next/link'
 import React from 'react'
 import Logo from "../assets/light_logo.png";
 import MobileMenu from "../assets/hamburger-menu-icon.svg";
-
-
+import NextNProgress from 'nextjs-progressbar';
 function Header() {
-
     return (
         <div>
+       <NextNProgress color="#ff0000
+" startPosition={0.3} stopDelayMs={200} height={1} showOnShallow={true}  />
             <div className="Mobile_icon">
                 <i className="fa-solid fa-bars"></i>
             </div>

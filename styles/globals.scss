@@ -25,6 +25,7 @@
 }
 
 a {
+  text-decoration: none !important;
   font-family: Anonymous_Pro;
 }
 
@@ -80,10 +81,9 @@ nav {
           text-transform: uppercase;
           border-radius: 10px;
         }
-
         a:hover {
-          background-color: #42378f;
-          background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+          background-color: #000000;
+          background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
           padding: 10px 10px 10px 10px;
           border-radius: 10px;
         }
@@ -154,7 +154,7 @@ body {
       color: white;
     }
     span {
-      font-size: 35px;
+      font-size: 25px;
       font-family: Anonymous_Pro_bold;
     }
   }
@@ -196,7 +196,7 @@ body {
       // background-color: #1d1d1d;
       border-radius: 10px;
       padding: 10px;
-      border: 3px solid transparent;
+      // border: 3px solid transparent;
       height: auto;
       // width: 200px;
       .logo {
@@ -207,9 +207,8 @@ body {
       }
     }
     .Technology_box:hover {
-      border: 3px solid rgb(124, 124, 124);
-      box-shadow: rgba(126, 126, 126, 0.25) 0px 50px 100px -20px,
-        rgba(73, 73, 73, 0.3) 0px 30px 60px -30px;
+      background-color: #000000;
+      background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
     }
   }
 }
@@ -246,8 +245,9 @@ body {
   gap: 20px;
 
   .Project_box {
+    border-radius: 10px;
     padding: 10px;
-    border: 1px solid rgba(124, 124, 124, 0);
+    // border: 1px solid rgba(124, 124, 124, 0);
     height: auto;
     width: 300px;
     .Project_image {
@@ -261,10 +261,16 @@ body {
       h3 {
         font-size: 16px;
       }
+      p {
+        text-decoration: none;
+      }
     }
   }
   .Project_box:hover {
-    background-color: rgb(26, 26, 26);
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    border: 0;
+    border-radius: 10px;
   }
 }
 
@@ -277,15 +283,15 @@ body {
   display: none !important;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .Mobile_icon {
     display: block !important;
     float: right;
     padding: 19px 19px 10px 10px;
-  .fa-bars {
-    font-size: 35px;
-    color: #ffffff;
-  }
+    .fa-bars {
+      font-size: 25px;
+      color: #ffffff;
+    }
     img {
       fill: white;
     }
@@ -314,7 +320,6 @@ body {
   }
 }
 
-
 .Social_media_position {
   background-color: white;
   display: flex;
@@ -339,8 +344,7 @@ body {
   }
 }
 
-.social_media_list
-{
+.social_media_list {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: white;
@@ -357,9 +361,9 @@ body {
   height: auto;
 }
 
-.Social_media, .social_media_list h6 {
+.Social_media,
+.social_media_list h6 {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
 }
-
