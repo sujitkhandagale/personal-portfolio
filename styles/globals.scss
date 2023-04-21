@@ -1,3 +1,6 @@
+#nprogress .spinner {
+  display:  none !important;
+}
 @font-face {
   font-family: Anonymous_Pro;
   src: url("./fonts/Anonymous_Pro.ttf");
@@ -92,11 +95,19 @@ nav {
   }
 }
 
+html {
+  cursor: red;
+}
+
 body {
   color: white;
   background-color: black;
   font-family: Anonymous_Pro;
   margin: 0 !important;
+}
+
+.d-none {
+  display: none !important;
 }
 
 .container {
@@ -107,14 +118,14 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  nav {
-    display: none;
+  .navbar {
+    display: block !important;
   }
 }
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 570px;
   }
 }
 @media (min-width: 768px) {
@@ -171,6 +182,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .home_hero {
+    padding: 50px 0 0 0 ;
     .Home_Description {
       position: static;
       left: 0;
@@ -287,7 +299,7 @@ body {
   .Mobile_icon {
     display: block !important;
     float: right;
-    padding: 19px 19px 10px 10px;
+    padding: 27px 24px 10px 10px;
     .fa-bars {
       font-size: 25px;
       color: #ffffff;
@@ -366,4 +378,27 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
+}
+// Header Mobile Menu 
+.mobile {
+  display: block !important;
+}
+
+@media only screen and (max-width:768px) {
+  .mobile {
+    display: block !important;
+  }
+  .menu_item {
+    display: flex !important;
+    flex-direction: column;
+    text-align: end;
+    height: 100vh;
+
+    li {
+      padding: 10px;
+    }
+  }
+.hide {
+  display: none !important;
+}
 }

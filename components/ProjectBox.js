@@ -7,7 +7,7 @@ function ProjectBox({ Project_image, Project_Title, Project_description, Tools }
         <Link href={"/"}>
             <div className='Project_box'>
                 <div className="Project_image">
-                    <Image src={Project_image} height={""} width={""} alt='img'/>
+                    <Image src={Project_image} alt='img'/>
                 </div>
                 <div className="Project_desc">
                     <h3>{Project_Title}</h3>
