@@ -1,10 +1,14 @@
 import Header from '@/components/Header'
-import React from 'react'
+import React from 'react';
 
 function resume() {
+
+
+
   return (
     <>
       <Header />
+
     </>
   )
 }

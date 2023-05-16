@@ -11,7 +11,7 @@ function projects() {
     </Head>
       <Header />
       <section className='container'>
-        <div className="Heading text-center">
+        <div className="section_name">
           <h2>Projects</h2>
         </div>
         <div className='Projects_boxes'>
