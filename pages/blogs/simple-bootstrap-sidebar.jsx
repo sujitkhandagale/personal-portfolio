@@ -11,7 +11,7 @@ function simplebootstrapsidebar() {
     return (
         <div>
             <Header />
-            <main>
+            {/* <main>
                 <div className="container">
                    
                     <div className={BootstrapSidebar.blog_section}>
@@ -33,7 +33,7 @@ function simplebootstrapsidebar() {
                     </div>
 
                 </div>
-            </main>
+            </main> */}
 
         </div>
     )
