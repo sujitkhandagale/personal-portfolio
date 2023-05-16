@@ -4,10 +4,18 @@ import Header from '@/components/Header'
 import HomeHero from '@/components/HomeHero'
 import Technology from '@/components/Technology'
 import ProjectsSmall from '@/components/ProjectsSmall'
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+
+
+
+import 'react-loading-skeleton/dist/skeleton.css'
+import { Suspense } from 'react'
 
 // import "../styles/globals.scss";
 
 export default function Home() {
+
+
 
 
 
@@ -21,7 +29,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
       </Head>
+      <Suspense fallback={
+          <SkeletonTheme baseColor="#202020" highlightColor="#444">
+          <p>
+            <Skeleton count={2} />
+          </p>
+        </SkeletonTheme>
+      }>
+
+      </Suspense>
       <Header />
+     
+   
+    
       {/* <NextNProgress /> */}
       <div className="container">
         <HomeHero />

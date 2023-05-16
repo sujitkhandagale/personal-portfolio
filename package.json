@@ -16,6 +16,8 @@
     "react": "18.2.0",
     "react-bootstrap": "^2.7.3",
     "react-dom": "18.2.0",
+    "react-loading-skeleton": "^3.3.1",
+    "react-spinners-kit": "^1.9.1",
     "sass": "^1.61.0",
     "scss": "^0.2.4"
   }

@@ -27,6 +27,17 @@
   src: url("./fonts/Anonymous_Pro.ttf");
 }
 
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  img {
+    width: 100px;
+    height: auto;
+  }
+}
+
 a {
   text-decoration: none !important;
   font-family: Anonymous_Pro;
