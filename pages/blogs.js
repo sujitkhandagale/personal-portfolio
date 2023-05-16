@@ -9,7 +9,7 @@ function blogs() {
             <Header />
             <main>
                 <div className="section_name">
-                    Blog
+                    Blogs
                 </div>
                 <div className="container blog_section">
                     <div className="blog_section_thumbnail_caro">
