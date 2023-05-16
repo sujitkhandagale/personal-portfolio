@@ -1,12 +1,12 @@
 import Header from '@/components/Header';
 import React from 'react'
-import BootstrapSidebar from "./simple-bootstrap-sidebar.module.scss";
-import Image from 'next/image';
+// import BootstrapSidebar from "./simple-bootstrap-sidebar.module.scss";
+// import Image from 'next/image';
 
 
-import BlogTool1 from "../../assets/language_logos/bootstrap.png";
-import BlogTool2 from "../../assets/language_logos/html.png";
-import BlogImage from "../../assets/Projects/simple-bootstrap-sidebar-01.sujitkhandagale.in_.png";
+// import BlogTool1 from "../../assets/language_logos/bootstrap.png";
+// import BlogTool2 from "../../assets/language_logos/html.png";
+// import BlogImage from "../../assets/Projects/simple-bootstrap-sidebar-01.sujitkhandagale.in_.png";
 function simplebootstrapsidebar() {
     return (
         <div>
