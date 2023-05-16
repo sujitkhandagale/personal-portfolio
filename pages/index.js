@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Doctorconsulatationapp from './projects/doctor-consulatation-app'
 import Header from '@/components/Header'
 import HomeHero from '@/components/HomeHero'
 import Technology from '@/components/Technology'
 import ProjectsSmall from '@/components/ProjectsSmall'
-import { useRouter } from 'next/router';
 
 // import "../styles/globals.scss";
 
