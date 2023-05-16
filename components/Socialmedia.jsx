@@ -8,9 +8,9 @@ import Image from "next/image";
 function Socialmedia() {
   return (
     <>
-      <Link href={"/"}>
+      <Link target="__blank" href={"https://github.com/sujitkhandagale"}>
         <div className="Social_media_position">
-          <Image src={Github} alt="Social Media" />
+          <Image placeholder='imgae'src={Github} alt="Social Media" />
           <h6> Find Me</h6>
         </div>
       </Link>

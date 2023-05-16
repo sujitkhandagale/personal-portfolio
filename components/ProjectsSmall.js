@@ -14,7 +14,7 @@ function ProjectsSmall() {
             <div className="container">
                 <div className="Projects_boxes">
                   
-                    <ProjectBox Projects_Links={"/bus-booking-template"} Project_image={Project2} Project_Title={"Bus Booking Template"} Project_description={"Bus Booking Website is Made on Reactjs with React Router Dom V6, And Scss ..."} />
+                    <ProjectBox Projects_Links={"/bus-booking-project"} Project_image={Project2} Project_Title={"Bus Booking Template"} Project_description={"Bus Booking Website is Made on Reactjs with React Router Dom V6, And Scss ..."} />
                     <ProjectBox Project_image={Project1} Project_Title={"Doctor Consultation"} Project_description={""} />
                     <ProjectBox Project_image={Project1} Project_Title={"Doctor Consultation"} Project_description={""} />
                     <ProjectBox Project_image={Project1} Project_Title={"Bus Booking Template"} Project_description={""} />

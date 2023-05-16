@@ -2,12 +2,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-function ProjectBox({ Project_image, Project_Title, Project_description, Tools }) {
+function ProjectBox({ Project_image, Project_Title, Project_description, Tools, Projects_Links }) {
+
+
     return (
-        <Link href={"/"}>
+        <Link href={""}
+        >
+
             <div className='Project_box'>
                 <div className="Project_image">
-                    <Image src={Project_image} alt='img'/>
+                    <Image placeholder='imgae'src={Project_image} alt='img'/>
                 </div>
                 <div className="Project_desc">
                     <h3>{Project_Title}</h3>

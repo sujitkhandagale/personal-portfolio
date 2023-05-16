@@ -14,7 +14,7 @@ function about() {
         <div className="container">
           <div className="center_box">
            <div className="box">
-            <h1 className='name'><b>Name</b> : Sujit Khandagale</h1>
+            <h1 className='name'>Name : Sujit Khandagale</h1>
             <h4>Location : Ghatkopar, Mumbai, Maharashtra 400086</h4>
             <h2 className='language'>language : Marathi, Hindi, English
             </h2>

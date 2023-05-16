@@ -5,9 +5,13 @@ import Logo from "../assets/light_logo.png";
 import MobileMenu from "../assets/hamburger-menu-icon.svg";
 import NextNProgress from 'nextjs-progressbar';
 import { ToggleButton } from 'react-bootstrap';
+import { useRouter } from 'next/router';
 function Header() {
+    const router = useRouter();
+    const currentRoute = router.pathname;
 
     const [open, setOpen] = useState([]);
+
     const ToggleClass = () => {
         setOpen(!open)
     }
@@ -21,15 +25,28 @@ function Header() {
             <nav>
                 <div className="container navbar">
                     <div className="logo">
-                        <Link href={"/"}><Image src={Logo} alt='img'></Image></Link>
+                        <Link href={"/"}><Image placeholder='imgae'src={Logo} alt='img'></Image></Link>
                     </div>
                     <div className="menu_items">
-                        <ul className={ open ? "menu_item hide" : "menu_item"}>
-                            <li><Link href={"/"}>Home</Link></li>
-                            <li><Link href={"/projects"}>Projects</Link></li>
-                            <li><Link href={"/about"}>About Me</Link></li>
-                            <li><Link href={"/help"}>Help</Link></li>
-                            <li className='resume'><Link href={"/resume:"}>Resume</Link></li>
+                        <ul className={open ? "menu_item hide" : "menu_item"}>
+                            <li><Link className={currentRoute === '/' ?
+                                "active" : "inactive"
+                            } href={"/"}>Home</Link></li>
+                            <li><Link className={currentRoute === '/projects' ?
+                                "active" : "inactive"
+                            } href={"/projects"}>Projects</Link></li>
+                            <li><Link className={currentRoute === '/blogs' ?
+                                "active" : "inactive"
+                            } href={"/blogs"}>Blogs</Link></li>
+                            <li><Link className={currentRoute === '/about' ?
+                                "active" : "inactive"
+                            } href={"/about"}>About Me</Link></li>
+                            <li><Link className={currentRoute === '/help' ?
+                                "active" : "inactive"
+                            } href={"/help"}>Help</Link></li>
+                            <li className='resume'><Link className={currentRoute === '/resume' ?
+                                "active" : "inactive"
+                            } href={"/resume"}>Resume</Link></li>
                         </ul>
                     </div>
                 </div>

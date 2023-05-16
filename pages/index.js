@@ -5,11 +5,15 @@ import Header from '@/components/Header'
 import HomeHero from '@/components/HomeHero'
 import Technology from '@/components/Technology'
 import ProjectsSmall from '@/components/ProjectsSmall'
-
+import { useRouter } from 'next/router';
 
 // import "../styles/globals.scss";
 
 export default function Home() {
+
+
+
+
   return (
     <>
       <Head>
