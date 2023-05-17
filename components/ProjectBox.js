@@ -6,20 +6,21 @@ function ProjectBox({ Project_image, Project_Title, Project_description, Tools, 
 
 
     return (
-        <Link href={""}
-        >
+        <div>
+            <Link href={`${"projects/" + Projects_Links}`}>
+                <div className='Project_box'>
+                    <div className="Project_image">
+                        <Image placeholder='imgae' src={Project_image} alt='img' />
+                    </div>
+                    <div className="Project_desc">
+                        <h3>{Project_Title}</h3>
+                        <p>{Project_description}</p>
 
-            <div className='Project_box'>
-                <div className="Project_image">
-                    <Image placeholder='imgae'src={Project_image} alt='img'/>
+                    </div>
                 </div>
-                <div className="Project_desc">
-                    <h3>{Project_Title}</h3>
-                    <p>{Project_description}</p>
-                    
-                </div>
-            </div>
-        </Link>
+
+            </Link>
+        </div>
     )
 }
 
