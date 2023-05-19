@@ -2,6 +2,8 @@ import "../styles/globals.scss";
 import React from 'react'
 import { useRouter } from 'next/router'
 import Preloader from "@/components/Preloader";
+import "../assets/font-awsome-v6/css/all.css"
+import "../assets/font-awsome-v6/css/fontawesome.min.css";
 
 
 

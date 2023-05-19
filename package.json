@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-loading-skeleton": "^3.3.1",
     "react-pdf": "^6.2.2",
+    "react-responsive-carousel": "^3.2.23",
     "react-spinners-kit": "^1.9.1",
     "sass": "^1.61.0",
     "scss": "^0.2.4"

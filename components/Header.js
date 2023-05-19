@@ -33,15 +33,15 @@ function Header() {
                             <li><Link className={currentRoute === '/projects' ?
                                 "active" : "inactive"
                             } href={"/projects"}>Projects</Link></li>
-                            <li><Link className={currentRoute === '/blogs' ?
+                            {/* <li><Link className={currentRoute === '/blogs' ?
                                 "active" : "inactive"
-                            } href={"/blogs"}>Blogs</Link></li>
+                            } href={"/blogs"}>Blogs</Link></li> */}
                             <li><Link className={currentRoute === '/about' ?
                                 "active" : "inactive"
                             } href={"/about"}>About Me</Link></li>
-                            <li><Link className={currentRoute === '/help' ?
+                            {/* <li><Link className={currentRoute === '/help' ?
                                 "active" : "inactive"
-                            } href={"/help"}>Help</Link></li>
+                            } href={"/help"}>Help</Link></li> */}
                             <li className='resume'><Link className={currentRoute === '/resume' ?
                                 "active" : "inactive"
                             } href={"/resume"}>Resume</Link></li>
