@@ -119,7 +119,12 @@ html {
 
 body {
   color: white;
-background-image: url("../assets//dark-background-abstract-background-network-3d-background-7680x4320-8324.png");
+background-image: url("../assets/deer-silhouette-sun-dark-background-3840x2880-974.png");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center center;
+background-attachment: fixed ;
+
   font-family: Anonymous_Pro;
   margin: 0 !important;
 }
@@ -264,6 +269,10 @@ background-image: url("../assets//dark-background-abstract-background-network-3d
       }
     }
   }
+  .Projects_boxes {
+    justify-content: center !important;
+
+  }
 }
 
 // Project Boxes
@@ -278,6 +287,7 @@ background-image: url("../assets//dark-background-abstract-background-network-3d
     border-radius: 10px;
     padding: 10px;
     // border: 1px solid rgba(124, 124, 124, 0);
+    background-color: #101010;
     height: auto;
     width: 300px;
     .Project_image {
@@ -531,6 +541,23 @@ background-image: url("../assets//dark-background-abstract-background-network-3d
         width: 30px !important;
         height: auto;
       }
+    }
+  }
+}
+
+.Project_box:hover {
+  .tools_overlay {
+    display: block !important;
+    position: absolute;
+    right: 0;
+    top: 80%;
+    display: inline-flex;
+    height: auto;
+    gap: 5px;
+
+    img {
+      width: 30px !important;
+      height: auto;
     }
   }
 }
