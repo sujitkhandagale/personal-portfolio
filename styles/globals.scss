@@ -62,7 +62,7 @@ span {
 
 nav {
   padding: 18px 0 5px 0;
-  background-color: black;
+  // background-color: black;
 }
 
 .navbar {
@@ -119,7 +119,7 @@ html {
 
 body {
   color: white;
-  background-color: black;
+background-image: url("../assets//dark-background-abstract-background-network-3d-background-7680x4320-8324.png");
   font-family: Anonymous_Pro;
   margin: 0 !important;
 }
@@ -269,7 +269,7 @@ body {
 // Project Boxes
 
 .Projects_boxes {
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;

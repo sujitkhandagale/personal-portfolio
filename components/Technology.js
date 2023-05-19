@@ -6,6 +6,7 @@ import NodeLogo from "../assets/language_logos/node.png";
 import sass from "../assets/language_logos/sass.png";
 import Html from "../assets/language_logos/Html.png";
 import ReactLogo from "../assets/language_logos/Reactjs.png";
+import NextJs from "../assets/language_logos/nextjs.png";
 const Languages = [
   {
   id: 1,
@@ -30,6 +31,10 @@ const Languages = [
 {
   id:6,
   img: Html
+},
+{
+  id:7,
+  img: NextJs
 }
 ];
 function Technology() {
