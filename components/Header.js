@@ -41,7 +41,7 @@ function Header() {
                             } href={"/blogs"}>Blogs</Link></li> */}
                             <li><Link className={currentRoute === '/about' ?
                                 "active" : "inactive"
-                            } href={"/about"}>About Me</Link></li>
+                            } href={"/about"}>About Me </Link></li>
                             {/* <li><Link className={currentRoute === '/help' ?
                                 "active" : "inactive"
                             } href={"/help"}>Help</Link></li> */}
@@ -53,7 +53,7 @@ function Header() {
                 </div>
             </nav>
         </div>
-        
+
     )
 }
 
