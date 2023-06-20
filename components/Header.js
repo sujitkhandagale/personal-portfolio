@@ -33,6 +33,9 @@ function Header() {
                             <li><Link className={currentRoute === '/projects' ?
                                 "active" : "inactive"
                             } href={"/projects"}>Projects</Link></li>
+                            <li><Link className={currentRoute === '/store' ?
+                                "active" : "inactive"
+                            } href={"/store"}>Store</Link></li>
                             {/* <li><Link className={currentRoute === '/blogs' ?
                                 "active" : "inactive"
                             } href={"/blogs"}>Blogs</Link></li> */}
@@ -42,9 +45,9 @@ function Header() {
                             {/* <li><Link className={currentRoute === '/help' ?
                                 "active" : "inactive"
                             } href={"/help"}>Help</Link></li> */}
-                            <li className='resume'><Link className={currentRoute === '/resume' ?
+                            {/* <li className='resume'><Link className={currentRoute === '/resume' ?
                                 "active" : "inactive"
-                            } href={"/resume"}>Resume</Link></li>
+                            } href={"/resume"}>Resume</Link></li> */}
                         </ul>
                     </div>
                 </div>
