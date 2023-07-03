@@ -48,7 +48,7 @@ function Header() {
                             {/* <li className='resume'><Link className={currentRoute === '/resume' ?
                                 "active" : "inactive"
                             } href={"/resume"}>Resume</Link></li> */}
-                            test
+                            
                         </ul>
                     </div>
                 </div>

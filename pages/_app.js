@@ -1,36 +1,32 @@
 import "../styles/globals.scss";
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import Preloader from "@/components/Preloader";
 import "../assets/font-awsome-v6/css/all.css"
 import "../assets/font-awsome-v6/css/fontawesome.min.css";
+import PageLoader from './../components/PageLoader';
 
+const MyApp = ({ Component, pageProps }) => {
+  const router = useRouter();
 
-
-
-export default function App({ Component, pageProps }) {
-
-  const router = useRouter()
-  const [loading, setLoading] = React.useState(false)
-
-  React.useEffect(() => {
+  useEffect(() => {
     const handleRouteChange = (url) => {
-      setLoading(true)
-    }
+      console.log('App is changing to:', url);
+      // Perform any additional actions on route change
+    };
 
-    const handleRouteChangeComplete = () => {
-      setLoading(false)
-    }
-
-    router.events.on('routeChangeStart', handleRouteChange)
-    router.events.on('routeChangeComplete', handleRouteChangeComplete)
+    router.events.on('routeChangeStart', handleRouteChange);
 
     return () => {
-      router.events.off('routeChangeStart', handleRouteChange)
-      router.events.off('routeChangeComplete', handleRouteChangeComplete)
-    }
-  }, [router.events])
-  return<>{loading ? <Preloader /> : <Component {...pageProps} />}</>
+      router.events.off('routeChangeStart', handleRouteChange);
+    };
+  }, []);
 
-  
-}
+  return (
+    <>
+      <PageLoader />
+      <Component {...pageProps} />
+    </>
+  );
+};
+
+export default MyApp;
